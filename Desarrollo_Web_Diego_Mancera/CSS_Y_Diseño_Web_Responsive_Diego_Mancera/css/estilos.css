@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/Dancing Script.ttf');
+}
+
+body{
+    font-family: "Dancing Script"; /*CONSIDERACIONES GENERALES PUNTO (1)*/
+    background-color: #02010A; /*CONSIDERACIONES GENERALES PUNTO (2)*/
+}
+
+/*CONSIDERACIONES GENERALES PUNTO (3)*/
+figure img{
+    box-shadow: 2px 2px #02010A;
+}
+
+/*CONSIDERACIONES GENERALES PUNTO (4)*/
+#contenido{
+    width: 900px;
+    margin: 0 auto;
+    animation: slidein 3s;
+}
+
+/*REQUERIMIENTOS CABECERA*/
+#cabecera{
+    background-color: #5b7989;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#cabecera p{
+    float: left;
+    width: 45%;
+}
+
+#titulo{
+    text-align: left;
+    padding-left: 15px;
+}
+
+#enlaces{
+    text-align: right;
+}
+
+
+#cabecera a{
+    color: white;
+    text-decoration: underline;
+}
+
+#cabecera a[alt="inicio"]{
+    text-decoration: none;
+}
+
+#cabecera a[alt="paisajes"]{
+    text-decoration: none;
+}
+
+#cabecera a[alt="retratos"]{
+    text-decoration: none;
+}
+
+
+/*REQUERIMIENTOS IMAGEN CENTRAL*/
+#contenedor{
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;
+}
+
+#columna1{
+    margin: 0 auto;
+    background-color: #82c3a6;
+    height: 500px;
+}
+
+
+/*REQUERIMIENTOS IMAGENES SECUNDARIAS*/
+#columna2{
+    background-color: #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+#columna2 div{
+    box-sizing: border-box;
+    min-height: 200px;
+    min-width: 100px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#columna2 figcaption{
+    text-align: center;
+}
+
+#figura2 img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#figura3 img:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+
+/*REQUERIMIENTOS PIE DE PAGINA*/
+#pie_pagina{
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #C6d5c5;
+}
+
+
+#pie_pagina div{
+    box-sizing: border-box;
+    min-height: 100px;
+    min-width: 100px;
+    width: 25%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em;
+}
+
+/*REQUERIMIENTOS GALERIA DE IMAGENES*/
+#galeria{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #d5c75f;
+}
+
+
+#galeria div{
+    box-sizing: border-box;
+    min-height: 200px;
+    width: 33.3%;
+    margin: 0 auto;
+}
+
+#galeria div:first-child img{
+    filter: blur(10px);
+}
+
+#galeria div:nth-child(even){
+    filter: grayscale(100%);
+}
+
+#galeria div:nth-child(3){
+    filter: sepia(90%);
+}
+
+
+/*CONSIDERACIONES GENERALES PUNTO (5)*/
+/*TAMAÑO PANTALLA DESKTOP*/
+@media screen and (min-width: 900px){
+    /*CONSIDERACIONES GENERALES PUNTO (4)*/
+    #contenido{
+        width: 900px;
+        margin: 0 auto;
+        animation: slidein 3s;
+    }
+
+    #cabecera{
+        width: 100%;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    #cabecera p{
+        width: 45%;
+        float: left;
+    }
+
+    #titulo{
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    #enlaces{
+        text-align: right;
+    }
+
+    #contenedor{
+        width: 100%;
+        margin: 0 auto;
+        height: 800px;
+    }
+
+    #columna1{
+        width: 100%;
+        margin: 0 auto;
+        height: 500px;
+    }
+
+    #columna2{
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    #pie_pagina{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #pie_pagina div{
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    #galeria{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*CONSIDERACIONES GENERALES PUNTO (5)*/
+/*TAMAÑO PANTALLA MOVIL*/
+@media screen and (max-width: 899px){
+    /*CONSIDERACIONES GENERALES PUNTO (4)*/
+    #contenido{
+        width: 100%;
+        margin: 0;
+        animation: slidein 3s;
+    }
+
+    #cabecera{
+        width: 100%;
+        height: 130px;
+        margin: 0;
+    }
+
+    #cabecera p{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #titulo, #enlaces{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #contenedor{
+        width: 100%;
+        margin: 0 auto;
+        height: 580px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #columna1{
+        width: 100%;
+        margin: 0;
+        height: 180px;
+        padding-top: 10px;
+    }
+
+    #columna2{
+        width: 100%;
+        margin: 0;
+        height: 400px;
+    }
+
+    #columna2 div{
+        width: 100%;
+        margin: 0;
+        height: 200px;
+    }
+
+    #pie_pagina div{
+        width: 100%;
+        margin: 0;
+    }
+
+    #galeria{
+        width: 100%;
+        margin: 0;
+    }
+
+    #galeria div{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*REQUERIMIENTOS ANIMACION*/
+@-webkit-keyframes slidein {
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+
+    }
+}
