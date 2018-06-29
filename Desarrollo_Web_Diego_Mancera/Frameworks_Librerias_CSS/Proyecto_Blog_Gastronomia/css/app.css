@@ -1,0 +1,94 @@
+body{
+    background: url("../img/fondo.png");
+    background-repeat: repeat;
+    background-position: center center;
+    color: white;
+}
+
+.contenido{
+    border: 1px dotted blue;
+    background-color: rgba(155,155,155,0.8);
+}
+
+.primera-columna{
+    border-right: 1px solid white;
+}
+
+.buscador, .favoritos{
+    padding: 1rem;
+}
+
+.menu{
+    text-align: center;
+}
+
+.texto-buscar{
+    width: 80%;
+    float: left;
+
+}
+
+.imagen-favoritos{
+    border: 2px solid white;
+    margin: 1rem auto;
+    width: 7rem;
+    height: 5rem;
+}
+
+.grupo-enlaces a{
+    text-decoration: none;
+}
+
+.grupo-enlaces li{
+    list-style: none;
+}
+
+.grupo-enlaces li:hover{
+    font-size: 2rem;
+}
+
+.imagen-publicacion{
+    border: 1px solid #00b0ff;
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.comentario{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.comentario img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.fecha{
+    font-style: italic;
+}
+
+.color-letra{
+    color: white;
+}
+
+.entrada{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+

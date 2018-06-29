@@ -1,0 +1,71 @@
+.grupo-publicaciones{
+    min-height: 50rem;
+}
+
+.iconos-redes{
+    margin-top: 1rem;
+}
+
+.iconos-redes ul{
+    list-style: none;
+}
+
+.logo-red{
+    border: 1px solid black !important;
+    border-radius: 10px;
+}
+
+.imagen-logo img{
+    padding-top: 2rem;
+    width: 9rem;
+    height: 10rem;
+}
+
+.galeria img{
+    border: 2px solid blue;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.publicacion, .perfil-autor{
+    background-color: white;
+    border: 1px solid blue;
+}
+
+.publicacion p, .perfil-autor p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.publicacion img{
+    float: left;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.perfil-autor img{
+    border: 1px solid black;
+    margin: 1rem auto;
+}
+
+.comentario{
+    padding: 2rem !important;
+}
+
+.texto-estilo{
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .grupo-enlaces a{
+        width: 1rem !important;
+    }
+}
+
+
+
+
+
+
+
