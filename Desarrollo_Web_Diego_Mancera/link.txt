@@ -1,2 +1,4 @@
 DIRECCION PARA CLONAR EL REPOSITORIO DE NEXTU
+USUARIO DEL REPOSITORIO DE GITHUB => diegoronhp / PASSWORD DEL USUARIO => m4nc3r4
+CORREOS ASOCIADOS AL REPOSITORIO: diegoronhp@gmail.com / dmanceras@ucentral.edu.co
 https://github.com/diegoronhp/Proyectos_Next_U.git
