@@ -1,0 +1,31 @@
+<div class="catalogo-container">
+  <div class="row">
+    <div class="col 16">
+      <h5>Catálogo de Productos</h5>
+    </div>
+    <div class="col 13 offset 13 buscar">
+      <label for="buscar-input">¿Qué producto buscas?</label>
+      <input type="text" id="buscar-input" name="buscar-input" placeholder="Buscar" ngModel #filter (ngModelChange)="onChange(filter.value)">
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card col l3" *ngFor="let producto of Productos">
+        <div class="card-image">
+          <img class="col l12" src="/images/{{producto.nombre}}.jpg">
+        </div>
+        <div class="col l12 card-content">
+          <h5>{{producto.nombre}}</h5>
+          <p>Precio: ${{producto.precio}}</p>
+          <p>Cantidad: {{producto.cantidad}}</p>
+        </div>
+        <div class="col l12 card-action">
+          <button class="btn col l5" type="button" name="{{producto.nombre}}" #input (click)="verProducto(input.name)">Ver más</button>
+          <button class="btn col l5" type="button" name="{{producto.nombre}}" #inputAdd (click)="agregarCarrito(inputAdd.name,cant.value)">Agregar</button>
+          <input type="number" class="col l4 cantidad" value="1" min="1" max="{{producto.cantidad}}" #cant>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

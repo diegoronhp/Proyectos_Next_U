@@ -1,0 +1,33 @@
+<div class="details-container">
+  <h4>Carrito de Compras</h4>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col l12">
+      <div class="col l6">
+        <table>
+          <tr *ngFor="let item of Carrito">
+            <td>
+              <div class="row">
+                <div class="col l4">
+                  <img class="col l10" src="images/{{item.nombre}}.jpg">
+                </div>
+                <div class="col l5">
+                  <p>{{item.nombre}}</p>
+                  <p>Unidades: {{item.cantidad}}</p>
+                </div>
+              </div>
+              <p>Subtotal: ${{item.subtotal}}</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col l6">
+        <h5>Total: ${{PagoTotal}}</h5>
+        <div class="row">
+          <a href="./principal" class="btn">Cancelar</a>
+          <a (click)="pagarCompra()" class="btn">Pagar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

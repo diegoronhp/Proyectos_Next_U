@@ -1,0 +1,9 @@
+.barra{
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  min-width: 1rem !important;
+}
+.material-icons{
+  display: inline !important;
+}

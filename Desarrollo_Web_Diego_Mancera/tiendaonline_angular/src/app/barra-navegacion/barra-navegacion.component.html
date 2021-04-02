@@ -1,0 +1,10 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">La Bodega</a>
+    <ul id="barra-nav" class="right hide-on-small-and-down">
+      <li><a href="/principal"><i class="material-icons">apps</i></a></li>
+      <li><a (click)="mostrarCarrito()"><i class="material-icons">shopping_cart</i><span *ngIf="barraVisible" class="barra">{{cantProductos}}</span></a></li>
+      <li><a href=""><i class="material-icons">exit_to_app</i></a></li>
+    </ul>
+  </div>
+</nav>
